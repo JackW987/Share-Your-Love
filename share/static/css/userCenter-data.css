@@ -1,0 +1,244 @@
+.userCenter-data-container{
+    width: 1280px;
+    border:1px solid #eee;
+    background: white;
+    float: left;
+    border-radius: 3px;
+}
+.data-container-nav{
+    width: 210px;
+    float: left;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #222;
+
+}
+.data-container-nav ul{
+    margin:0px;
+    padding:0px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.data-container-nav ul li{
+    list-style: none;
+    height: 45px;
+    width: 100%;
+}
+.data-container-box{
+    width: 1068px;
+    float: right;
+    padding:15px 20px;
+    border-left: 1px solid #eee;
+}
+/* 导航样式 */
+.data-container-nav ul li{
+    padding-left: 30px;
+    transition: .3s;
+	color: #222;
+	line-height: 45px;
+	cursor: pointer;
+}
+.data-container-nav ul li:hover{
+    background: #f4f5f7;
+}
+.data-nav-active{
+    background: #f80!important;
+    color: white!important;
+}
+/* 我的资料修改样式 */
+.person-banner-mainbox{
+	width: 100%;
+	background: white;
+	display: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+}
+.person-banner-mainbox table{
+	width: 100%;	
+}
+.person-banner-mainbox table tr {
+	border-bottom:1px solid #c8c8c8;
+	position: relative;
+}
+.person-banner-mainbox table tr td{
+	padding:20px 0;
+}
+.mainbox-small-title{
+	font-size: 15px;
+	color:black;
+	padding:20px 0;
+	width: 150px;
+}
+.name-input{
+	width: 214px;
+	padding:5px 10px;
+	border:1px solid #c8c8c8;
+	border-radius: 4px;
+	background: hsla(0,0%,71%,.1);
+}
+.none-border-bottom{
+	border-bottom: none!important;
+}
+.save-msg-btn{
+	width: 100px;
+	height: 30px;
+	border-radius: 15px;
+	text-align: center;
+	line-height: 30px;
+	color:white;
+	background: #f80;
+	display: block;
+	margin: 20px 0;
+}
+.person-msg-top span{
+	margin: 0 20px 0 6px;
+}
+textarea {
+	width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+    display: block;
+    resize: none;
+    outline-style: none;
+}
+.pull-left{
+	float: left!important;
+}
+table input {
+	outline: none;
+}
+.change-password-btn{
+	font-size:14px;
+	padding:4px 12px;
+	border: 1px solid #f80;
+    color: #f80;
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.data-box-active{
+	display: block!important;
+}
+/* 消息通知框 */
+.data-container-box{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+.plate-section-title{
+	padding-left: 20px;
+}
+.data-info-container{
+	width: 1067px;
+	height: 605px;	
+	border-top: 1px solid #eee;
+	position: relative;
+	background: #fbfbfb;
+	overflow: scroll;
+	overflow-x:visible;
+	display: none;
+}
+.info-comment-box{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+.no-more-msg{
+	display: block;
+    width: 95px;
+    text-align: center;
+    margin: 15px auto;
+    text-decoration: none;
+	color: #999;
+	font-size: 12px;
+}
+.info-comment-box ul{
+	width: 100%;
+	padding-left: 150px;
+	padding-right: 150px;
+	margin:0px;
+	font-size: 12px;
+}
+.info-comment-box ul li{
+	list-style: none;
+	margin-bottom: 15px;
+}
+.time-stamp{
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.time-stamp span{
+	background-color: #dbdbdb;
+    color: #fff;
+    padding: 1px 8px;
+    border-radius: 50px;
+}
+.msg-text-detail{
+	width: 100%;
+	padding-left: 35px;
+	position: relative;
+}
+.msg-text-detail img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 35px;
+	height: 35px;
+	border-radius: 20px;
+}
+.msg-text-detail p{
+	width: 100%;
+    color: #555;
+    padding: 10px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    max-width: 800px;
+    margin-left: 11px;
+    word-wrap: break-word;
+	word-break: break-all;
+	position: relative;
+}
+.msg-text-detail p::before{
+	content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid #eaeaea;
+    border-bottom: 7px solid transparent;
+    position: absolute;
+    left: -7px;
+}
+.msg-text-detail p .detail-title{
+	display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+
+
+
+
+
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+
+}
+.clearfix:after{
+	clear:both;
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>分享你的热爱</title>
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 腾讯云 -->
+    <link rel="stylesheet" href="http://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="static/css/wangEditor.min.css" />
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/homepage-subCenter.css">
+    <link href="static/css/homepage-sub.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body> 
+    <div class="top-nav">
+      <div class="top-nav-container clearfix">
+        <img src="/static/images/logo.svg" alt="logo" class="logo">
+        <ul class="list-btn clearfix">
+          <li class="top-nav-active">
+            首页
+          </li>
+          <li>
+            分类
+          </li>
+          <li>
+            论坛
+          </li>
+          <li>
+            视频
+          </li>
+        </ul>
+        <div class="search-box">
+            <input type="text">
+            <a href="javascript:void(0);">
+              <i class="glyphicon glyphicon-search">
+                
+              </i>
+              搜索
+            </a>
+        </div>
+        <div class="user-box">
+          <ul class="user-box-btn">
+            <li class="user-box-btn-li">
+              <i class="fa fa-envelope-o"></i>
+              消息
+            </li>
+            <li class="user-box-btn-li follow-btn-li">
+              <div class="box-btn-text">
+                <i class="fa fa-heart-o"></i>
+                关注
+              </div>
+              <div class="follow-detail-box">
+                <i class="glyphicon glyphicon-triangle-top top-arrow-decoration"></i>
+                <span class="follow-detail-title">
+                  我关注的所有作者
+                </span>
+                <ul> 
+
+                </ul>
+                <a href="javascript:void(0);">
+                  全部关注
+                </a>
+              </div>
+            </li>
+            <li class="user-box-btn-li history-btn-li">
+              <div class="box-btn-text">
+                <i class="fa fa-history"></i>
+                历史
+              </div>
+              <div class="love-detail-box">
+                <i class="glyphicon glyphicon-triangle-top top-arrow-decoration"></i>
+                <span class="detail-box-title">
+                  <i class="glyphicon glyphicon-tag"></i> 今天
+                </span>
+                <ul class="love-detail-list">
+
+                </ul>
+                <a href="javascript:void(0);">
+                  更多
+                  <i class="glyphicon glyphicon-menu-right"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div class="user-box-right">
+            <!-- 登陆后 -->
+            <!-- <img src="images/admin.jpg" alt="头像">
+            <span>
+              风雪夜归人
+            </span> -->
+            <!-- 登录前 -->
+            <div class="login-before">
+              <i class="fa fa-user-o"></i>
+              <a href="javascript:void(0);" class="sign-btn" data-toggle="modal" data-target=".bs-example-modal-sm">
+                登录
+              </a><!-- 
+           --><a href="javascript:void(0);" class="login-btn" data-toggle="modal" data-target=".bs-example-modal-sm">
+                注册
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 登录注册框 -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+       <div class="modal-dialog sign-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+          </div>
+          <div class="modal-body">
+            <div class="login-sign-nav">
+              <a href="javascript:void(0);" class="nav-sign-btn login-sign-nav-active">
+                登录
+              </a>
+              <a href="javascript:void(0);" class="nav-login-btn">
+                注册
+              </a>
+            </div>
+            <div class="handle-change-box">
+              <div class="sign-handle-box animated handle-box-active handle-child-box">
+                <div class="login-sign-input">
+                  <div class="username-input">
+                    <i class="fa fa-user"></i>
+                    <input class="login-username" type="text" placeholder="邮箱">
+                  </div>
+                  <div class="password-input">
+                    <i class="fa fa-lock"></i>
+                    <input class="login-password" type="password" placeholder="密码">
+                  </div>
+                </div>
+                <div class="login-sign-handle">
+                  <div class="handle-remember">
+                    <input type="checkbox" >
+                    记住密码
+                  </div>
+                  <div class="handle-forget">
+                    忘记密码?
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="sign-to-btn">
+                  登录
+                </a>
+              </div>
+              <div class="login-handle-box animated handle-child-box">
+                <div class="login-sign-input">
+                  <div class="username-input">
+                    <i class="fa fa-user"></i>
+                    <input class="register-username" type="text" placeholder="注册邮箱">
+                  </div>
+                  <div class="password-input">
+                    <i class="fa fa-lock"></i>
+                    <input class="register-password" type="password" placeholder="密码">
+                  </div>
+                  <div class="refirm-password password-input">
+                    <i class="fa fa-lock"></i>
+                    <input class="register-refirm-password" type="password" placeholder="确认密码">
+                  </div>
+                  <a href="javascript:void(0);" class="login-to-btn">
+                    注册
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="middle-banner"> 
+      <div class="sub-right-nav">
+        <div class="top-title">
+          创作中心
+        </div>
+        <ul class="right-nav-list">
+          <li>
+            <a href="/homepage-sub.html" class="sub-nav-active">
+              投稿中心
+            </a>
+          </li>
+          <li>
+            <a href="/homepage-manu.html">
+              稿件状态
+            </a>
+          </li>
+        </ul>
+      </div> 
+      <div class="sub-content-box">
+        <div class="sub-content-nav">
+          <ul class="clearfix">
+            <li>
+              <a href="javascript:void(0);" class="sub-content-nav-active video-sub-btn">
+                视频投稿
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="imgTxt-sub-btn">
+                图文投稿
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-content-upload add-sub-content-active">
+          <div class="video-upload-before-box add-sub-content-active">
+            <div class="content-upload-box">
+              <i class="fa fa-cloud-upload"></i>
+              <span class="cloud-upload-text">
+                点击此处上传本地视频
+              </span>
+              <span class="cloud-upload-info">
+                上传视频内容规范请移步下方视频大小内容限制进行查看<br/>
+                视频审核时间约30-60分钟，具体时长根据当前上传视频总和而定
+              </span>
+              <input type="file" accept=".mp4,.flv,.avi,.wmv,.mov,.webm,.mpeg4,.ts,.mpg,.rm,.rmvb,.mkv" class="video-upload-banner upload-btn" />
+            </div>
+            <div class="cloud-upload-tooltip clearfix">
+              <a href="javascript:void(0);" id="ban-remind" >
+                禁止发布的视频视频内容
+              </a>
+              <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                视频格式
+              </a>
+              <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="视频最大不得超过100M">
+                视频大小
+              </a>
+            </div>            
+          </div>
+          <div class="video-upload-after-box">
+            <div class="plate-upload-box">
+              <div class="plate-upload-title fixed-padding-title">
+                <h1>文件上传</h1>
+              </div>
+              <div class="file-progress">
+                <img src="static/images/userCenter/icon/video-upload.png" alt="video-upload">
+                <div class="file-progress-top">
+                  上传的视频名称
+                </div>
+                <div class="file-progress-bottom">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="plate-upload-box">
+              <div class="plate-upload-title">
+                <h1>基本信息</h1>
+              </div>
+              <div class="content-upload-box video-cover-upload">
+                <i class="fa fa-picture-o"></i>
+                <span class="cloud-upload-text">
+                  点击此处上传视频封面
+                </span>
+                <span class="cloud-upload-info">
+                  上传的封面图片不得小于772x450px<br/>
+                  给您带来的不便敬请谅解，谢谢
+                </span>
+                <input type="file" accept="image/jpeg, image/jpg, image/png" class="img-upload-banner upload-btn" />
+              </div>
+              <div class="img-show-banner">
+                <img src="" alt="图片展示">
+              </div>
+              <div class="img-msg-banner">
+                <div class="plate-small-upload type-upload">
+                  <span class="plate-small-title">
+                    类型
+                  </span>
+                  <select class="form-control">
+
+                  </select>
+                </div>
+                <div class="plate-small-upload work-upload">
+                  <span class="plate-small-title">
+                    标题
+                  </span>
+                  <div class="work-name-input">
+                    <input type="text" class="form-control work-title-val" maxlength="80" placeholder="输入您作品的标题">
+                    <span class="work-input-word">0/80</span>
+                  </div>
+                </div>
+                <div class="plate-small-upload work-upload">
+                  <span class="plate-small-title">
+                    标签
+                  </span>
+                  <div class="work-name-input">
+                    <div class="tag-input-container video-tag-container">
+                      <div class="tag-tips">
+                        最多添加三个标签
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tag-select-box clearfix">
+                    <p>
+                      推荐标签:
+                    </p>
+                    <div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="plate-small-upload work-upload">
+                  <span class="plate-small-title">
+                    简介
+                  </span>
+                  <div class="brief-text">
+                    <textarea class="form-control"></textarea>
+                    <span class="work-input-word-textarea">0/250</span>
+                  </div>
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="info-submission-btn info-submission-btn-video">
+                立即投稿
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sub-content-imgTxt">
+          <div class="content-upload-box video-cover-upload imgTxtUpload">
+            <i class="fa fa-picture-o"></i>
+            <span class="cloud-upload-text">
+              点击此处上传图文封面
+            </span>
+            <span class="cloud-upload-info">
+              上传的封面图片不得小于772x450px<br/>
+              给您带来的不便敬请谅解，谢谢
+            </span>
+            <input type="file" accept="image/jpeg, image/jpg, image/png" class="img-upload-banner upload-btn" />
+          </div>
+          <div class="img-show-banner">
+            <img src="" alt="图片展示">
+          </div>
+          <div class="imgTxt-edit-banner">
+            <div class="main-editor write-plate">
+              <div class="editor-menu-container">
+                <a href="javascript:void(0);" class="menu-selected-tag">
+                  
+                </a>
+                <span class="histroy-selected-tag">
+                  
+                </span>
+              </div>
+              <div class="editor-container">
+                
+              </div>
+              <input type="text" class="editor-title" placeholder="请输入文章标题" />
+            </div>
+            <div class="imgTxt-msg-banner">
+              <div class="plate-small-upload type-upload">
+                <span class="plate-small-title">
+                  类型
+                </span>
+                <select class="form-control">
+
+                </select>
+              </div>
+              <div class="plate-small-upload work-upload">
+                <span class="plate-small-title">
+                  标签
+                </span>
+                <div class="work-name-input">
+                  <div class="tag-input-container imgTxt-tag-container">
+                    <div class="tag-tips">
+                      最多添加三个标签
+                    </div>
+                  </div>
+                </div>
+                <div class="tag-select-box clearfix">
+                  <p>
+                    推荐标签:
+                  </p>
+                  <div>
+
+                  </div>
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="info-submission-btn info-submission-btn-imgTxt">
+                立即投稿
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 禁止发布视频 --> 
+    <!-- Modal -->
+    <div class="modal fade" id="error-content" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog comm-normal" role="document">
+        <div class="modal-content">
+          <div class="modal-body normal-text">
+            <span class="title">
+              投稿准则
+            </span>
+            <span class="sub-title">
+              禁止以下内容
+            </span>
+            <p>
+              本网站严格执行互联网信息服务管理方法第十五条规定，并将此作为本网站的行事准则，对于含有一下非法内容的信息，我们将采用最严厉的态度，予以杜绝。
+            </p>
+            <p>
+              1.反对宪法所确定的基本原则的；<br/>
+              2.危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；<br/>
+              3.损害国家荣誉和利益的；<br/>
+              4.煽动民族仇恨、民族歧视，破坏民族团结的；<br/>
+              5.破坏国家宗教政策，宣扬邪教和封建迷信的；<br/>
+              6.散布谣言，扰乱社会秩序，破坏社会稳定的；<br/>
+              7.散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；<br/>
+              8.侮辱或者诽谤他人，侵害他人合法权益的；<br/>
+              9.含有法律、行政法规禁止的其他内容的。<br/>
+            </p>
+            <span class="sub-title">
+              投稿规范
+            </span>
+            <p>
+              测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容
+            </p>
+            <p>
+              测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容
+            </p>
+            <p>
+              测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容
+            </p>
+            <p>
+              测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容
+            </p>
+            <p>
+              测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <video style="display:none;" controls="controls" id="aa" oncanplaythrough="videoTime(this)">
+    </video>
+    <!-- jQuery -->
+    <script src="static/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- 腾讯云 -->
+    <script src="http://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.min.js"></script>
+    <script src="http://imgcache.qq.com/open/qcloud/video/tcplayer/lib/hls.min.0.8.8.js"></script>
+    <script src="https://imgcache.qq.com/open/qcloud/js/vod/sdk/ugcUploader.js"></script>
+    <!-- layer.js -->
+    <script src="static/js/layer/layer.js"></script>
+    <!-- wangEditor -->
+    <script type="text/javascript" src= "static/js/wangEditor.js"></script>
+    <!-- nav js -->
+    <script src="static/js/nav.js"></script>
+    <!-- own js -->
+    <script src="static/js/homepage-sub.js"></script>
+    <!--axios-->
+    <script src="static/js/axios.min.js"></script>
+    <!--cookiesUtil-->
+    <script src="static/js/user/utils.js"></script>
+    <!--user user js-->
+    <script src="static/js/user/user-common.js"></script>
+    <!--homepage sub js-->
+    <script src="static/js/homepage/sub.js"></script>
+  </body>
+</html>

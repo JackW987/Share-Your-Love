@@ -1,0 +1,325 @@
+a:hover{
+	text-decoration: none;
+}
+a:focus{
+	text-decoration: none;
+}
+body{
+    background: white;
+
+}
+.main-box{
+	width: 960px;
+	height: auto;
+    margin:0px auto;
+    padding-top: 81px;
+}
+.lunbo-box{
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 20px;
+}
+.lunbo-box .carousel-inner{
+    width: 100%;
+    height: 100%;
+}
+.lunbo-box .carousel-inner .item{
+    width: 100%;
+    height: 100%;
+}
+.lunbo-box .carousel-inner .item img{
+    width: 100%;
+    height: 100%;
+}
+/* 图文板块 */
+.imgTxt-left-banner{
+	width: 640px;
+	float: left;
+}
+.img-txt-atlas{
+	width: 100%;
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	float: left; 
+}
+.img-txt-atlas li{
+	width: 100%;
+	height: 248px;
+	padding:20px;
+	padding-right: 220px;
+	float: left;
+	position: relative;
+	border-bottom: 1px solid #f0f0f0 ;
+	padding-left: 0px;
+}
+.img-txt-main-img{
+	width: 200px;
+	height: 140px;
+	position: absolute;
+	border-radius:3px;
+	background: url(../images/bull-item/love-2.jpg) center;
+	background-size:120%!important;
+	background-position: center!important;
+	right: 0px;
+	top: 60px;
+}
+.img-txt-main-bottom{
+	height: 20px;
+	width: 100%;
+	margin-top: 10px;
+}
+.bottom-label{
+	width: 62px;
+	height: 20px;
+	line-height: 20px;
+	color: #ea6f5a;
+	font-size: 13px;
+	padding:2px 6px;
+	border:1px solid rgba(236,97,73,.7);
+	border-radius:3px;
+}
+.bottom-label:hover{
+	background: #fef7f6;
+	color: #ea6f5a;
+}
+.bottom-label:focus{
+	color: #ea6f5a;
+}
+.bottom-click{
+	margin-left: 10px;
+	color: #b4b4b4;
+}
+.bottom-click:hover{
+	color: #787878;
+}
+.liked{
+	color: red!important;
+}
+.remind-label{
+	margin-top: 20px;
+	font-size: 14px;
+	color: #969696;
+}
+.img-txt-main-author a{
+	float: left;
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	color:black;
+	font-size: 15px;
+}
+.img-txt-main-author a img{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 1px;
+	margin-right: 10px;
+}
+.img-txt-main-title{
+	display: block;
+	width: 100%;
+	height: 27px;
+	line-height: 27px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 10px;
+	color: black;
+}
+.img-txt-main-title:hover{
+	text-decoration: underline;
+	color: black;
+}
+.img-txt-main-txt{
+	width: 100%;
+	height: 108px;
+	font-size: 13px;
+	line-height: 24px;
+}
+.usercenter-img-txt-remind{
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	width: 340px;
+}
+/* 切换按钮 */
+.trigger-nav{
+	width: 100%;
+	margin:0px;
+	padding:0px;
+}
+.trigger-nav li{
+	display: block;
+	list-style: none;
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+}
+.trigger-nav li a{
+	display: block;
+	padding: 13px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #969696;
+    line-height: 25px;
+}
+.trigger-nav li a i{
+	vertical-align: middle;
+	margin-right: 7px;
+}
+.trigger-nav li:after{
+	display: block;
+	content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 100%;
+    opacity: 0;
+    border-bottom: 2px solid #646464;
+    transform: translateX(-50%) scaleX(0);
+    transition: .2s ease-in-out;
+}
+.trigger-nav li:hover:after{
+	opacity: 1;
+    transform: translate(-50%) scaleX(1);
+}
+.trigger-nav li:hover a{
+	color: #646464;
+}
+.trigger-li-active{
+	border-bottom: 2px solid #646464;
+}
+.trigger-li-active a{
+	color: #646464!important;
+}
+.trigger-li-active:hover:after{
+	opacity: 0!important;
+}
+/* 右边导航 */
+.imgTxt-right-banner{
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+}
+.to-banner-nav{
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.to-banner-nav li{
+	list-style: none;
+	width: 33%;
+	float: left;
+	margin-bottom: 26px;
+	text-align: center;
+}
+.to-banner-nav li a{
+	display: block;
+	width: 100%;
+	height: 55px;
+	color: #8590a6;
+}
+.to-banner-nav li a .banner-nav-img{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 13px;
+}
+/* 各类按钮变色 */
+.to-baseketball-btn:hover{
+	color: #ffcf00;
+}
+.to-football-btn:hover{
+	color: #0084ff;
+} 
+.to-game-btn:hover{
+	color: #0f88eb;
+} 
+.to-diamond-btn:hover{
+	color: #ff8eb3;
+}
+.to-upload-btn:hover{
+	color: #43d480;
+}
+.plate-right-banner-title{
+	font-size: 13px;
+	color: #969696;
+	display: block;
+	padding-left: 37px;
+	margin-top: 17px;
+	margin-bottom: 5px;
+}
+/* 关注板块 */
+.more-author-list{
+	padding-left: 37px;
+}
+.follow-nav-list{
+	padding:0px;
+	margin:0px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.load-more{
+	display: block;
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	background: white;
+	border-radius: 4px;
+	border:1px solid #dcdcdc;
+	font-size: 13px;
+	color: #787878;
+	background-color: #f7f7f7;	
+	text-align: center;
+}
+.follow-nav-list li{
+	float: left;
+	margin-top: 15px;
+	width: 100%;
+	position: relative;
+	list-style: none;
+}
+.follow-head{
+	border-radius: 50%;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+.follow-head img{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border:1px solid #ddd;
+	display: block;
+	float: left;
+}
+.follow-add-btn{
+	position: absolute;
+	right: 0px;
+	top: 5px;
+	font-size: 13px;
+}
+.follow{
+	color: #f80;
+}
+.followed{
+	color: #969696;
+}
+.follow-name{
+	color: #333;
+	font-weight: 700;
+	font-size: 13px;
+	margin-top:5px;
+	display: block;
+}
+.follow-introduce{
+	display: block;
+	float: left;
+	font-size: 12px;
+	margin-top: 5px;
+	color: #969696;
+}

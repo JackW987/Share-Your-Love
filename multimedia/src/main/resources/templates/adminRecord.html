@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+    <script src="js/html5.js" th:src="@{~/js/html5.js}"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" th:href="@{~/css/bootstrap.min.css}" rel="stylesheet">
+    <link rel="stylesheet" href="http://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css" th:href="@{~/css/bootstrap-datetimepicker.min.css}">
+    <link rel="stylesheet" type="text/css" href="css/adminCss/adminNav.css" th:href="@{~/css/adminCss/adminNav.css}">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" th:href="@{~/css/animate.css}">
+    <link rel="stylesheet" type="text/css" href="css/adminCss/adminRecord.css" th:href="@{~/css/adminCss/adminRecord.css}">
+    <link rel="stylesheet" href="css/myPagination.css" th:href="@{~/css/myPagination.css}">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- 导航样式 -->
+    <div class="admin-top-nav"> 
+      <div class="top-nav-logo">
+        Share Your love
+      </div>
+      <a href="javascript:void(0);" class="login-out">
+        <i class="glyphicon glyphicon-log-out">
+          
+        </i>
+        <span>
+          退出
+        </span>
+      </a>
+      <span href="javascript:void(0);" class="remind-msg msg-bell">
+        <i class="glyphicon glyphicon-bell">
+          <span class="remind-msg-bubble add-green">
+            99+
+          </span>
+        </i>
+        <ul class="remind-ul">
+         <li class="web-msg">
+           <a href="adminHomepage.html">
+            <i class="glyphicon glyphicon-cloud-upload"></i>
+             最新访问量数据已经更新
+             <span>
+               30分钟前
+             </span>  
+           </a>   
+         </li> 
+         <li class="web-msg">
+          <a href="adminReport.html">
+            <i class="glyphicon glyphicon-info-sign"></i>
+             有新的举报内容
+             <span>
+               30分钟前
+             </span>
+          </a> 
+         </li>
+         <li class="web-msg">
+          <a href="adminHomepage.html">
+            <i class="glyphicon glyphicon-fire"></i>
+             月最佳员工数据更新
+             <span>
+               30分钟前
+             </span>
+          </a> 
+         </li>
+        </ul>
+      </span>
+      <span class="welcome-msg">
+        欢迎你,管理员
+      </span>
+    </div>
+    <div class="admin-left-nav">
+        <div class="left-nav-head">
+            <div class="head-picture">
+                <img src="images/head/browse-head-1.jpg" alt="head-1">
+            </div>
+            <span class="head-msg">
+          <i class="glyphicon glyphicon-unchecked"></i>
+          普通管理员
+        </span>
+        </div>
+        <ul class="main-menu">
+            <li>
+                <a href="/admin/index">
+                    <i class="glyphicon glyphicon-home"></i>
+                    <span>首页</span>
+                </a>
+            </li>
+            <li class="user">
+                <a href="/admin/imgTxt">
+                    <i class="glyphicon glyphicon-tasks"></i>
+                    <span>图文</span>
+                </a>
+            </li>
+            <li class="user">
+                <a href="/admin/imgTxt/recover">
+                    <i class="glyphicon glyphicon-list-alt"></i>
+                    <span> 恢复图文</span>
+                </a>
+            </li>
+            <li class="user">
+                <a href="/admin/labels">
+                    <i class="glyphicon glyphicon-tags"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li class="user">
+                <a href="/admin/users">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <span>用户</span>
+                </a>
+            </li>
+            <li>
+                <a href="/admin/records" class="nav-active">
+                    <i class="glyphicon glyphicon-file"></i>
+                    <span>记录</span>
+                </a>
+            </li>
+            <li>
+                <a href="/admin/report">
+                    <i class="glyphicon glyphicon-warning-sign"></i>
+                    <span>举报</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+	<!-- 图文管理 -->
+	<div class="container">
+		<div class="box-container">
+			<div class="title">
+				管理员操作记录
+			</div>
+			<!--<div class="top-nav-search">-->
+	          <!--<i class="glyphicon glyphicon-search">-->
+	          <!---->
+	          <!--</i>-->
+	          <!--<input type="text" placeholder="搜索内容...">-->
+	          <!--&lt;!&ndash; 下拉菜单 &ndash;&gt;-->
+	          <!--<div class="btn-group search" role="group">-->
+			    <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+			      <!--搜索-->
+			      <!--<span class="caret"></span>-->
+			    <!--</button>-->
+			    <!--<ul class="dropdown-menu">-->
+			      <!--<li><a href="#">记录</a></li>-->
+			      <!--<li><a href="#">人员</a></li>-->
+			      <!--<li><a href="#">作者</a></li>-->
+			    <!--</ul>-->
+			  <!--</div>-->
+		      <!--&lt;!&ndash; 条件检索 &ndash;&gt;-->
+	   <!--</div>-->
+     <table class="table table-hover">
+       <thead>
+         <tr>
+           <th>
+             记录
+           </th>
+           <th>
+             类型
+           </th>
+           <th>
+             操作
+           </th>
+           <th>
+             人员
+           </th>
+           <th>
+             时间
+           </th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr th:each="record : ${records.getObjectList()}">
+           <td th:text="${record.getContent()}">
+             删除名为"snake"的图文
+           </td>
+           <td th:text="${record.getType()}">
+             图文
+           </td>
+           <td th:text="${record.getCommand()}">
+             删除
+           </td>
+           <td th:if="${record.getPeople()=='ROLE_ADMIN'}">开发者</td>
+           <td th:if="${record.getPeople()=='ROLE_VIDEO_ADMIN'}">影像管理者</td>
+           <td th:if="${record.getPeople()=='ROLE_IMGTXT_ADMIN'}">图文管理者</td>
+           <td th:text="${record.getCreateDate()}">
+             2017-09-10 21:18:37
+           </td>
+         </tr>
+         <tr>
+          <td>
+            下架名为"snake"的图文
+          </td>
+          <td>
+            图文
+          </td>
+          <td>
+            下架
+          </td>
+          <td>
+            图文管理员
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            恢复名为"snake"的图文
+          </td>
+          <td>
+            图文
+          </td>
+          <td>
+            恢复
+          </td>
+          <td>
+            图文管理员
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            撤回名为"snake"的影像
+          </td>
+          <td>
+            影像
+          </td>
+          <td>
+            撤回
+          </td>
+          <td>
+            影像管理员
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            下架名为"snake"的影像
+          </td>
+          <td>
+            影像
+          </td>
+          <td>
+            下架
+          </td>
+          <td>
+            影像管理员
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            恢复名为"snake"的影像
+          </td>
+          <td>
+            影像
+          </td>
+          <td>
+            恢复
+          </td>
+          <td>
+            影像管理员
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            上架名为"snake"的影像
+          </td>
+          <td>
+            影像
+          </td>
+          <td>
+            上架
+          </td>
+          <td>
+            影像管理员
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            封号名为"李祉昊"的用户
+          </td>
+          <td>
+            用户
+          </td>
+          <td>
+            封号
+          </td>
+          <td>
+            影像管理员
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            解封名为"李祉昊"的用户
+          </td>
+          <td>
+            用户
+          </td>
+          <td>
+            解封
+          </td>
+          <td>
+            影像管理员
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            删除名为"李祉昊"的用户
+          </td>
+          <td>
+            用户
+          </td>
+          <td>
+            删除
+          </td>
+          <td>
+            影像管理员
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            提升名为"李祉昊"的用户为图文管理员
+          </td>
+          <td>
+            用户
+          </td>
+          <td>
+            提高权限
+          </td>
+          <td>
+            开发者
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            提升名为"李祉昊"的用户为影像管理员
+          </td>
+          <td>
+            用户
+          </td>
+          <td>
+            提高权限
+          </td>
+          <td>
+            开发者
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+        <tr>
+          <td>
+            降低名为"李祉昊"的用户为普通用户
+          </td>
+          <td>
+            用户
+          </td>
+          <td>
+            降低权限
+          </td>
+          <td>
+            开发者
+          </td>
+          <td>
+            2017-09-10 21:18:37
+          </td>
+        </tr>
+       </tbody>
+     </table>
+    </div>
+   </div>
+   <div class="container bottom-page">
+     <div id="pagination" class="pagination" data-th-data-size="${records.getTotalElements()}"
+          data-th-data-page="${records.getTotalPages()}"
+     ></div>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/plug-ins.js" th:src="@{~/js/plug-ins.js}"></script>
+    <script type="text/javascript" src="js/layer-plug/layer.js" th:src="@{~/js/layer-plug/layer.js}"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js" th:src="@{~//bootstrap-datetimepicker.min.js}"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.fr.js" th:src="@{~/js/bootstrap-datetimepicker.fr.js}"></script>
+    <script type="text/javascript" src="js/adminJs/adminNav.js" th:src="@{~/js/adminJs/adminNav.js}"></script>
+    <script type="text/javascript" src="js/adminJs/pageNav.js" th:src="@{~/js/adminJs/pageNav.js}"></script>
+    <script type="text/javascript" src="js/adminJs/adminRecord.js" th:src="@{~/js/adminJs/adminRecord.js}"></script>
+    <script type="text/javascript" src="/js/axios.min.js" th:src="@{~/js/axios.min.js}"></script>
+    <script src="/js/myPagination.js" th:src="@{~/js/myPagination.js}"></script>
+    <script type="text/javascript" src="/js/adminJs/adminCommon.js" th:src="@{~/js/adminJs/adminCommon.js}"></script>
+    <script>
+      let page = getQueryString('page')
+      if (page==null){
+          page=1
+      }
+        window.onload = function () {
+            new myPagination({
+                id: 'pagination',
+                curPage:page, //初始页码
+                pageTotal:  $("#pagination").data('page'), //总页数
+                pageAmount: 16,  //每页多少条
+                dataTotal:  $("#pagination").data('size'), //总共多少条数据
+                pageSize: 5, //可选,分页个数
+                showPageTotalFlag:false, //是否显示数据统计
+                showSkipInputFlag:true, //是否支持跳转
+                getPage: function (page) {
+                    location.href = "/admin/records?page="+page;
+                }
+            })
+        }
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return decodeURI(r[2]); return null;
+        }
+    </script>
+  </body>
+</html>

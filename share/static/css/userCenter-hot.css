@@ -1,0 +1,30 @@
+.plate-list-banner .hot-user-info{
+    width: 100%;
+    padding:0px;
+    margin:0px;
+}
+.plate-list-banner .hot-user-info li{
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    line-height: 50px;
+}
+.plate-list-banner .hot-user-info li img{
+    margin-top: -3px;
+    margin-right: 3px;
+}
+.plate-list-banner .hot-user-info li span{
+    color: #6d757a;
+    width: 45%;
+    margin-right: 5%;
+    display: block;
+    float: left;
+    font-size: 12px;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+}
+.bottom-li-decoration{
+    border-bottom: 1px solid #f0f0f0;
+}

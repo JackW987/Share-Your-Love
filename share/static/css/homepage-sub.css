@@ -1,0 +1,337 @@
+.sub-content-upload{
+    width: 772px;
+    margin:0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: none;
+}
+.content-upload-box{
+    width: 772px;
+    height: 314px;
+    margin:0 auto;
+    border-radius: 5px;
+    position: relative; 
+    background: #fafafa;
+    padding-top: 80px;
+}
+.video-cover-upload{
+    height: 400px;
+    padding-top: 100px;
+}
+.img-msg-banner{
+    margin-top: 30px;
+}
+.upload-btn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+.content-upload-box:hover{
+    background: #f2f2f2;
+}
+.content-upload-box i{
+    font-size: 50px;
+    color:#666;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.cloud-upload-text{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    font-size: 15px;
+    display: block;
+}
+.cloud-upload-info{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    color: #999;
+    line-height: 20px;
+    line-height: 25px;
+    padding-top: 26px;
+}
+.cloud-upload-tooltip{
+    width: 100%;
+    height: 80px;
+    line-height: 30px;
+    text-align: center;
+}
+.cloud-upload-tooltip{
+    padding-top: 50px;
+}
+.cloud-upload-tooltip a{
+    color: #666;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cloud-upload-tooltip a:hover{
+    color: #f80;
+}
+.comm-normal{
+    width: 800px;
+}
+.normal-text .title{
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+.normal-text .sub-title{
+    width: 100%;
+    border-left: 3px solid #f80;
+    padding-left: 20px;
+    font-size: 23px;
+}
+.normal-text p{
+    color: #6d757a;
+    font-size: 13px;
+    margin-top: 22px;
+    line-height: 24px;
+}
+/* 上传封面图片 */
+.content-video-img{
+    width: 772px;
+    height: 500px;
+}
+.add-sub-content-active{
+    display: block!important;
+}
+.video-upload-before-box{
+    display: none;
+}
+.video-upload-after-box{
+    display: none;
+}
+/* 上传后样式 */
+.plate-upload-title{
+    padding:32px 0;
+}
+.plate-upload-title h1{
+    font-size: 20px;
+    color: #222;
+    font-weight: bold;
+    margin:0px; 
+}
+.fixed-padding-title{
+    padding-top: 0px!important;
+}
+.plate-upload-box{
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ccd0d7;
+}
+.file-progress{
+    padding-left: 85px;
+    position: relative;
+    height: 50px;
+}
+.file-progress img{
+    position: absolute;
+    left: 0;
+}
+.file-progress .file-progress-top{
+    height: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    color: #222;
+    line-height: 20px;
+}
+.file-progress-bottom {
+    height: 30px;
+    padding-top: 10px;
+}
+.file-progress-bottom .progress{
+    margin-bottom: 0px;
+    height: 15px;
+}
+.file-progress-bottom .progress .progress-bar{
+    height: 15px;
+    line-height: 15px;
+}
+.plate-small-upload{
+    margin-bottom: 23px;
+}
+.plate-small-title{
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+}
+.plate-small-title{
+    display:block;
+    margin-bottom: 10px;
+}
+.type-upload select{
+    width: 200px;
+}
+.work-upload input{
+    padding-right: 65px;
+}
+.work-name-input{
+    position: relative;
+}
+.work-name-input .tag-tips{
+    position: absolute;
+    right: 10px;
+    color: #9ba4ac;
+
+}
+.work-name-input .work-input-word{
+    color: #9ba4ac;
+    right: 15px;
+    position: absolute;
+    top: 7px;
+}
+.tag-input-container{
+    width: 100%;
+    display: block;
+    min-height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    padding-right: 130px;
+    position: relative;
+}
+.tag-input-container span{
+    cursor: pointer;
+    margin-right: 15px;
+}
+.tag-input-container span:hover{
+    text-decoration: line-through;
+}
+.tag-select-box{
+    width: 100%;
+    min-height: 28px;
+    margin-top: 20px;
+}
+.tag-select-box p{
+    color: #222;
+    height: 100%;
+    margin-bottom:0px;
+    float: left;
+    margin-right: 15px;
+    width: 60px;
+}
+.tag-select-box div{
+    width: 600px;
+    float: left;
+}
+.tag-select-box div span{
+    display: inline-block;
+    height: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 28px;
+    border:1px solid #ccd0d7;
+    border-radius: 14px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+.brief-text{
+    position: relative;
+}
+.brief-text textarea{
+    min-height: 160px;
+    resize: none;
+    padding-bottom: 30px;
+}
+.brief-text .work-input-word-textarea{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #9ba4ac;
+}
+.info-submission-btn{
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background: #f80;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+.info-submission-btn:hover{
+    background: #ff9108;
+}
+/* 图片展示 */
+.img-show-banner{
+    width:772px;
+    display: none;
+}
+.img-show-banner img{
+    width: 100%;
+    height: auto;
+}
+/* 图文版块 */
+.sub-content-imgTxt{
+    width: 772px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    background: #fff;
+    box-shadow: 0 1px 4px #dfe5ed;
+    border-radius: 3px;
+    margin-top: 70px;
+    position: relative;
+    display: none;
+}
+.imgTxt-edit-banner{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.imgTxtUpload{
+    margin-bottom: 0px;
+}
+.main-editor{
+	padding:0px;
+	padding-top:130px;
+    position: relative;
+    height: 600px;
+}
+.main-editor .w-e-text-container{
+	height: 100%!important;
+	border:none!important;
+}
+.editor-menu-container{
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	top: 70px;
+	line-height: 60px;
+	background: #ececec;
+	font-size: 16px;
+}
+.editor-title{
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	top: 0px;
+	border:none;
+	display: block;
+	outline: none;
+	padding-left: 15px;
+	font-size: 30px;
+}
+.w-e-text {
+    background: #fafafa;
+}
+.imgTxt-msg-banner{
+    margin-top: 30px;
+}

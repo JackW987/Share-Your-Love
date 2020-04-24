@@ -1,0 +1,188 @@
+body{
+    background: #efefef;
+}
+/* 轮播样式修改 */
+.carousel-inner .item{
+    width: 100%;
+    height: 650px;
+    cursor: pointer;
+}
+.top-item-1{
+    background: url(../images/video-top-banner/bg.jpg) center no-repeat;
+    background-size: cover;
+}
+.top-item-2{
+    background: url(../images/video-top-banner/bg-2.jpg) center no-repeat;
+    background-size: cover;
+}
+.top-item-3{
+    background: url(../images/video-top-banner/bg-3.jpg) center no-repeat;
+    background-size: cover;
+}
+.video-banner-nav{
+    width: 100%;
+    height: white;
+    background: white;
+}
+.video-banner-nav ul{
+    width: 480px;
+    padding:0px;
+    margin:0 auto;
+}
+.video-banner-nav ul li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    font-size: 13px;
+    padding:10px 20px;
+    width: 80px;
+    cursor: pointer;  
+}
+.video-banner-nav ul li div{
+    padding:1px 2px;
+    background: #f80;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.video-banner-nav-active{
+    border-bottom: 3px solid #f80!important;
+    color: #f80!important;
+}
+/* 视频展示版块 */
+.div-to-5{
+    width: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+}
+.video-banner{
+    width: 100%;
+    padding:20px;
+}
+.video-banner-item{
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.player{
+    position: relative;
+    height: 200px;
+}
+.player .img-con{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    background: url(../images/video-top-banner/item-1.jpg);
+    background-size: cover!important;
+    background-position: center!important;
+}
+.player .mask{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;   
+    transition: .3s;
+    cursor: pointer;
+    z-index: 1;
+}
+.player .mask i{
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    font-size: 60px;
+    line-height: 60px;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    transition: .3s;
+    opacity: 0;
+}
+.video-banner-item:hover .mask{
+    background: rgba(0, 0, 0, .5);
+}
+.video-banner-item:hover .mask i{
+    font-size: 40px;
+    opacity: 1;
+}
+.video-banner-item:hover .text-mask-banner{
+    bottom: 0px;
+}
+.video-banner-item .text{
+    width: 100%;
+    padding:10px 10px 0px 10px;
+    font-size: 13px;
+    display: block;
+}
+.video-banner-item .text .top-text{
+    cursor: pointer;
+    transition: .3s;
+}
+.video-banner-item .text .top-text:hover{
+    color: #f80;
+}
+.video-banner-item .text .bottom-text{
+    width: 100%;
+    height: 37px;
+    line-height: 32px;
+    color: #9f9f9f;
+    padding-bottom: 5px;
+    padding-left:24px;
+    position: relative;
+}
+.video-banner-item .text .bottom-text img{
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+}
+.video-banner-item .text .bottom-text .author-name{
+    height: 32px;
+    line-height: 32px;
+    float: left;
+    padding-left: 5px;
+    font-size: 13px;
+}
+.video-banner-item .text .bottom-text .hot-tag{
+    height: 32px;
+    line-height: 32px;
+    float: right;
+    padding-right: 5px;
+    font-size: 13px;
+}
+.video-banner-item .text .bottom-text .hot-tag i{
+    color: #f80!important;
+}
+.video-banner-item .text .bottom-text .playback-tag{
+    height: 32px;
+    line-height: 32px;
+    float: right;
+    padding-right: 5px;
+    font-size: 13px;
+    margin-right: 5px;
+}
+.video-banner-item .text .bottom-text .playback-tag i{
+    color: #f80!important;
+}
+.top-text .top-title{
+    float: left;
+}
+.top-text .type-tag{
+    float: right;
+    padding-right: 5px;
+    font-size: 13px;
+    color: #f80!important;
+}

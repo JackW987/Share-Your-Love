@@ -1,0 +1,123 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.main-box{
+    padding-top: 50px;
+    background: #fbfbfb;
+}
+.notice-top{
+    width: 980px;
+    margin:0 auto 20px;
+    padding-top: 30px;
+    border-bottom: 1px solid #ddd;
+    height: 80px;
+    position: relative;
+    padding-left: 110px;
+}
+.notice-top-title{
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+.notice-top-nav{
+    margin:0px;
+    padding:0px;
+}
+.notice-top-nav li{
+    list-style: none;
+    float: left;
+    width: 62px;
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    font-size: 16px;
+}
+.notice-top-nav li a{
+    color: #555;
+}
+.notice-li-active{
+    color: #f80;
+    border-bottom:1px solid #f80;
+}
+.notice-li-active a{
+    color: #f80!important;
+}
+.notice-bottom{
+    width: 980px;
+    margin:0 auto;
+    min-height: 670px;
+}
+.notice-bottom-left{
+    width: 650px;
+    float: left;
+}
+.notice-bottom-right{
+    width: 280px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.notice-list{
+    width: 100%;
+    max-height: 680px;
+    margin:0px;
+    padding:0px;
+}
+.notice-list li{
+    width: 100%;
+    list-style: none;
+    height: 34px;
+    line-height: 34px;
+    font-size: 13px;
+    position: relative;
+}
+.notice-list li a{
+    margin-right: 10px;
+    height: 34px;
+    line-height: 34px;
+    display: block;
+    float: left;
+}
+.notice-list-tag{
+    color: #999;
+}
+.notice-list-text{
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    width: 490px;
+    color: #333;
+}
+.notice-list-tag:hover{
+    text-decoration: underline;
+}
+.notice-list-text:hover{
+    color: #f80;
+    text-decoration: underline;
+}
+.notice-time-tag{
+    position: absolute;
+    right: 0px;
+    height: 34px;
+    line-height: 34px;
+    color: #999;
+}
+.notice-right-title{
+    border-left: 3px solid #f80;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.notice-right-text{
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+    line-height: 23px;
+}

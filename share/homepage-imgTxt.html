@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>分享你的热爱</title>
+    <!-- Bootstrap -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 腾讯云 -->
+    <link rel="stylesheet" href="http://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="static/css/wangEditor.min.css" />
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link href="static/css/homepage-imgTxt.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="clearfix"> 
+    <div class="top-nav">
+      <div class="top-nav-container clearfix">
+        <img src="/static/images/logo.svg" alt="logo" class="logo">
+        <ul class="list-btn clearfix">
+          <li class="top-nav-active">
+            首页
+          </li>
+          <li>
+            分类
+          </li>
+          <li>
+            论坛
+          </li>
+          <li>
+            视频
+          </li>
+        </ul>
+        <div class="search-box">
+            <input type="text">
+            <a href="javascript:void(0);">
+              <i class="glyphicon glyphicon-search">
+                
+              </i>
+              搜索
+            </a>
+        </div>
+        <div class="user-box">
+          <ul class="user-box-btn">
+            <li class="user-box-btn-li">
+              <i class="fa fa-envelope-o"></i>
+              消息
+            </li>
+            <li class="user-box-btn-li follow-btn-li">
+              <div class="box-btn-text">
+                <i class="fa fa-heart-o"></i>
+                关注
+              </div>
+              <div class="follow-detail-box">
+                <i class="glyphicon glyphicon-triangle-top top-arrow-decoration"></i>
+                <span class="follow-detail-title">
+                  我关注的所有作者
+                </span>
+                <ul> 
+
+                </ul>
+                <a href="javascript:void(0);">
+                  全部关注
+                </a>
+              </div>
+            </li>
+            <li class="user-box-btn-li history-btn-li">
+              <div class="box-btn-text">
+                <i class="fa fa-history"></i>
+                历史
+              </div>
+              <div class="love-detail-box">
+                <i class="glyphicon glyphicon-triangle-top top-arrow-decoration"></i>
+                <span class="detail-box-title">
+                  <i class="glyphicon glyphicon-tag"></i>
+                </span>
+                <ul class="love-detail-list">
+
+                </ul>
+                <a href="javascript:void(0);">
+                  更多
+                  <i class="glyphicon glyphicon-menu-right"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div class="user-box-right">
+            <!-- 登陆后 -->
+            <!-- <img src="images/admin.jpg" alt="头像">
+            <span>
+              风雪夜归人
+            </span> -->
+            <!-- 登录前 -->
+            <div class="login-before">
+              <i class="fa fa-user-o"></i>
+              <a href="javascript:void(0);" class="sign-btn" data-toggle="modal" data-target=".bs-example-modal-sm">
+                登录
+              </a><!-- 
+           --><a href="javascript:void(0);" class="login-btn" data-toggle="modal" data-target=".bs-example-modal-sm">
+                注册
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 登录注册框 -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+       <div class="modal-dialog sign-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+          </div>
+          <div class="modal-body">
+            <div class="login-sign-nav">
+              <a href="javascript:void(0);" class="nav-sign-btn login-sign-nav-active">
+                登录
+              </a>
+              <a href="javascript:void(0);" class="nav-login-btn">
+                注册
+              </a>
+            </div>
+            <div class="handle-change-box">
+              <div class="sign-handle-box animated handle-box-active handle-child-box">
+                <div class="login-sign-input">
+                  <div class="username-input">
+                    <i class="fa fa-user"></i>
+                    <input class="login-username" type="text" placeholder="邮箱">
+                  </div>
+                  <div class="password-input">
+                    <i class="fa fa-lock"></i>
+                    <input class="login-password" type="password" placeholder="密码">
+                  </div>
+                </div>
+                <div class="login-sign-handle">
+                  <div class="handle-remember">
+                    <input type="checkbox" >
+                    记住密码
+                  </div>
+                  <div class="handle-forget">
+                    忘记密码?
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="sign-to-btn">
+                  登录
+                </a>
+              </div>
+              <div class="login-handle-box animated handle-child-box">
+                <div class="login-sign-input">
+                  <div class="username-input">
+                    <i class="fa fa-user"></i>
+                    <input class="register-username" type="text" placeholder="注册邮箱">
+                  </div>
+                  <div class="password-input">
+                    <i class="fa fa-lock"></i>
+                    <input class="register-password" type="password" placeholder="密码">
+                  </div>
+                  <div class="refirm-password password-input">
+                    <i class="fa fa-lock"></i>
+                    <input class="register-refirm-password" type="password" placeholder="确认密码">
+                  </div>
+                  <a href="javascript:void(0);" class="login-to-btn">
+                    注册
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 主要内容 -->
+    <div class="main-box">
+      <!-- 轮播 -->
+      <div id="carousel-example-generic" class="lunbo-box carousel slide" data-ride="carousel">
+        <!-- 三点控制按钮 -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- 轮播内容 -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="static/images/bull-item/imgTxt-item-1.jpg" alt="图文轮播-1">
+          </div>
+          <div class="item">
+            <img src="static/images/bull-item/imgTxt-item-2.jpg" alt="图文轮播-2">
+          </div>
+          <div class="item">
+            <img src="static/images/bull-item/imgTxt-item-3.jpg" alt="图文轮播-3">
+          </div>
+        </div>
+        <!-- 左右按钮 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="imgTxt-left-banner clearfix">
+        <ul class="trigger-nav clearfix">
+          <li class="trigger-li-active">
+            <a href="javascript:void(0);">
+              <i class="glyphicon glyphicon-fire"></i>
+              最热图文
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <i class="glyphicon glyphicon-comment"></i>
+              最新图文
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <i class="fa fa-dribbble"></i>
+              篮球
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <i class="fa fa-futbol-o"></i>
+              足球
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <i class="fa fa-gamepad"></i>
+              电竞
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <i class="fa fa-diamond"></i>
+              娱乐
+            </a>
+          </li>
+        </ul>
+        <ul class="clearfix img-txt-atlas animated">
+
+        </ul>
+      </div>
+      <div class="imgTxt-right-banner">
+        <span class="plate-right-banner-title">
+          更多内容
+        </span>
+        <ul class="to-banner-nav clearfix">
+          <li>
+            <a href="javascript:void(0);" class="to-baseketball-btn">
+              <div class="banner-nav-img">
+                <img src="static/images/userCenter/icon/baseketball.png" alt="baseketball">
+              </div>
+              <span>
+                篮球
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="to-football-btn">
+              <div class="banner-nav-img">
+                <img src="static/images/userCenter/icon/football.png" alt="baseketball">
+              </div>
+              <span>
+                足球
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="to-game-btn">
+              <div class="banner-nav-img">
+                <img src="static/images/userCenter/icon/game.png" alt="baseketball">
+              </div>
+              <span>
+                电竞
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="to-diamond-btn">
+              <div class="banner-nav-img">
+                <img src="static/images/userCenter/icon/diamond.png" alt="baseketball">
+              </div>
+              <span>
+                娱乐
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" class="to-upload-btn">
+              <div class="banner-nav-img">
+                <img src="static/images/userCenter/icon/book.png" alt="baseketball">
+              </div>
+              <span>
+                投稿
+              </span>
+            </a>
+          </li>
+        </ul>
+        <span class="plate-right-banner-title">
+          推荐作者
+        </span>
+        <div class="more-author-list">
+          <ul class="follow-nav-list clearfix">
+
+          </ul>
+          <a href="homepage-circle.html" class="load-more">
+            加载更多
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="static/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- 腾讯云 -->
+    <script src="http://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.min.js"></script>
+    <script src="http://imgcache.qq.com/open/qcloud/video/tcplayer/lib/hls.min.0.8.8.js"></script>
+    <!-- layer.js -->
+    <script src="static/js/layer/layer.js"></script>
+    <!-- wangEditor -->
+    <script type="text/javascript" src= "static/js/wangEditor.js"></script>
+    <!-- nav js -->
+    <script src="static/js/nav.js"></script>
+    <!-- own js -->
+    <script src="static/js/homepage-imgTxt.js"></script>
+    <!--axios-->
+    <script src="static/js/axios.min.js"></script>
+    <!--cookiesUtil-->
+    <script src="static/js/user/utils.js"></script>
+    <!--user user js-->
+    <script src="static/js/user/user-common.js"></script>
+    <!--homepage imgTxt js -->
+    <script src="static/js/homepage/imgTxt.js"></script>
+  </body>
+</html>

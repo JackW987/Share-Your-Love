@@ -1,0 +1,644 @@
+html , body{
+    margin:0px;
+    padding:0px;
+    font-family: "Microsoft YaHei";
+    background: white;
+}
+/* 顶部导航 */
+/* 左侧 */
+.top-nav{
+    width: 100%;
+    height: 51px;
+    background:#fff;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0 0 6px rgba(0,0,0,.06);
+    position: fixed;
+    z-index: 999;
+}
+.top-nav-container{
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 100%;
+}
+.logo{
+    width: auto;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+.list-btn{
+    margin:0px;
+    padding:0px;
+    height: 100%;
+    float: left;
+}
+.list-btn li{
+    font-size: 16px;
+    float: left;
+    height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    list-style: none;
+    line-height: 32px;
+    margin-left: 10px;
+    margin-top: 9px;
+    color: #555;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.list-btn li:hover{
+    background: #f80;
+    color: white;
+}
+.top-nav .search-box{
+    float: left;
+    margin-top: 8px;
+    margin-left: 20px;
+    position: relative;
+}
+.top-nav input{
+    width: 188px;
+    height: 34px;
+    padding:6px 85px 6px 12px;
+    border:1px solid #f80;
+    height: 20px;
+    color: #999;
+    font-size: 12px;
+    box-sizing: content-box;
+    border-radius: 5px;
+    outline:none;
+}
+.search-box a{
+    width: 80px;
+    display: block;
+    height: 34px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #f80;
+    color: white;
+    text-decoration: none;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+}
+.top-nav-active{
+    background: #f80 !important;
+    color: white !important;
+}
+/* 右侧 */
+.top-nav .user-box{
+    float: right;
+}
+.user-box-btn{
+    float: left;
+    margin-top: 8px;
+    margin:0px;
+    padding:0px;
+    height: 34px;
+}
+.user-box-btn-li{
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #666;
+    font-size: 13px;
+    list-style: none;
+    height: 100%;
+    line-height: 34px;
+    margin-top: 8px;
+    position: relative;
+}
+.box-btn-text{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.box-btn-text:hover{
+    color: #f80;
+}
+.box-btn-text i{
+    font-size: 13px;
+    margin-right: 3px;
+    display: block;
+    float: left;
+    margin-top: 11px;
+}
+.user-box-btn{
+    position: relative;
+}
+/* 历史观看记录 */
+.user-box ul li .love-detail-box{
+    position: absolute;
+    width: 260px;
+    padding:15px;
+    top: 36px;
+    background: white;
+    z-index: 1000;
+    left: -140px;
+    border-top: 3px solid #f80;
+    display: none;
+}
+.history-btn-li:hover .love-detail-box{
+    display: block;
+}
+.top-arrow-decoration{
+    position: absolute;
+    font-size: 13px;
+    color: #f80;
+    left: 160px;
+    top: -12px;
+}
+.love-detail-list{
+    width: 100%;
+    padding:0px;
+    margin:0px;
+    padding-top: 10px;
+    margin-top: 24px;
+    padding-bottom: 15px;
+    border-left: 1px solid #ccc;
+}
+.love-detail-list li{
+    width: 100%;
+    list-style:none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.love-detail-list li .detail-history{
+    float: left;
+    width: 169px;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    overflow: hidden;
+    padding-left: 10px;
+    color: #9a9a9a;
+}
+.love-detail-list li .detail-author{
+    float: right;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: #f80;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    overflow: hidden;
+    font-size: 13px;
+}
+.love-detail-list li .detail-history i{
+    margin-top: 7px;
+    margin-right: 8px;
+    font-size: 15px;
+    color: #f80;
+}
+.love-detail-list li:hover{
+    background:#f5f5f5;
+}
+.detail-box-title{
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    color: #f80;
+}
+.love-detail-box a{
+    display: block;
+    width: 100%;
+    height: 24px;
+    color: #9a9a9a;
+    background:#f5f5f5;
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.love-detail-box a:hover{
+    background: #f80;
+    color: white;
+}
+.love-detail-box a i{
+    transition: .3s;
+}
+.love-detail-box a:hover i{
+    margin-left: 15px;
+}
+/* 关注板块 */
+.follow-detail-box{
+    position: absolute;
+    width: 260px;
+    padding-bottom: 15px;
+    top: 36px;
+    background: white;
+    z-index: 1000;
+    left: -140px;
+    border-top: 3px solid #f80;
+    display: none;
+}
+.follow-detail-title{
+    width: 100%;
+    font-size: 13px;
+    display: block;
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+}
+.follow-detail-box ul{
+    width: 100%;
+    margin:0px;
+    padding:0px;
+}
+.follow-detail-box ul li{
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 80px;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.follow-detail-box ul li:hover{
+    background: #eeeeee;
+}
+.follow-detail-box ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+.follow-detail-box ul li div{
+    width: 100%;
+    height: 100%;
+}
+.follow-detail-box ul li div .first-mark{
+    width: 100%;
+    height: 50%;
+    display: block;
+    line-height: 20px;
+    font-size: 12px;
+}
+.follow-detail-box ul li div .first-mark .field{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #9a9a9a;
+    width: 60px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    overflow: hidden;
+}
+.follow-detail-box ul li div .first-mark .heat{
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #f80;
+    width: 60px;
+}
+.follow-detail-box a{
+    display: block;
+    width: 230px;
+    height: 24px;
+    color: #9a9a9a;
+    background: #f5f5f5;
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+    margin:0 auto;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.follow-detail-box a:hover{
+    background: #f80;
+    color: white;
+}
+.follow-btn-li:hover .follow-detail-box{
+    display: block;
+}
+/* 登录框样式 */
+.user-box-right{
+    float: right;
+    padding-top:5px;
+    padding-bottom: 3px;
+    margin-left:15px;
+    line-height: 40px;
+    padding-right: 17px;
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.user-box-right img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.user-box-right span{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    padding-top: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    color: #666;
+    font-size: 13px;
+}
+.login-before{
+    width: 100%;
+    height: 100%;
+}
+.login-before a{
+    color: #666;
+    font-size: 13px;
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    height: 14px;
+    line-height: 14px!important;
+    outline: none;
+}
+.login-before .sign-btn{
+    border-right:1px solid #666;
+}
+.login-before a:hover{
+    color: #f80;
+}
+/* 登录注册框 */
+.sign-container{
+    width: 400px;
+}
+.sign-container .modal-header{
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+.sign-container .modal-body{
+    position: relative;
+    height: 385px;
+    overflow: hidden;
+}
+.login-sign-nav{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.login-sign-nav a{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    color: #555;
+    font-size: 18px;
+}
+.login-sign-input{
+    width: 100%;
+}
+.login-sign-input input{
+    width: 100%;
+    height: 50px;
+    padding:4px 12px 4px 35px;
+    outline:none;
+    background: #f7f7f7;
+    border:1px solid #c8c8c8;
+    vertical-align: middle;
+}
+.username-input{
+    position: relative;
+}
+.username-input i{
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    font-size: 18px;
+    color: #969696;
+}
+.password-input{
+    position: relative;
+}
+.password-input i{
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    font-size: 18px;
+    color: #969696;
+}
+.username-input input{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.password-input input{
+    border-top:none!important;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.login-sign-nav-active{
+    font-weight: 700;
+    color: #f80!important;
+    border-bottom: 2px solid #f80;
+}
+.login-sign-handle{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+.handle-remember{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    color: #969696;
+    font-size: 13px;
+}
+.handle-remember input{
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 2px;
+}
+.handle-forget{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    color: #969696;
+    font-size: 13px;
+    cursor: pointer;
+}
+.sign-to-btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 9px 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background: #f80;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    text-align: center;
+}
+.login-to-btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 9px 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background: #f80;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    text-align: center;
+}
+.handle-change-box{
+    width: 278px;
+    height: 253px;
+    position: absolute;
+    left: 50%;
+    top: 115px;
+    margin-left: -139px;
+    overflow: hidden;
+    transition: .3s;
+}
+.sign-handle-box{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    height: 100%;
+    opacity: 0;
+    animation-delay: .2s;
+}
+.login-handle-box{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    animation-delay: .2s;
+}
+.handle-box-active{
+    z-index: 2;
+    opacity: 1;
+}
+/* 尾部 */
+.footer{
+    width: 100%;
+    background: #f6f9fa;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.footer-container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin:0 auto;
+}
+.footer-container p{
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    line-height: 30px;
+}
+.footer-container p a{
+    color: gray;
+}
+.footer-container p a:hover{
+    color: #f80;
+}
+.middle-banner{
+    padding-top: 50px;
+}
+
+/* 下拉菜单样式 */
+.prompt-down{
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+    color: #999999;
+    top: 9px;
+}
+.drop-menu-list{
+    position: absolute;
+    top: 51px;
+    left: 0px;
+    display: none;
+}
+.drop-menu-list ul{
+    margin:0px;
+    padding:0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: white;
+    border-radius: 0 0 4px 4px;
+    border-color: transparent;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+.drop-menu-list ul li{
+    list-style: none;
+}
+.drop-menu-list ul li a{
+    display: block;
+    width: 158px;
+    height: 51px;
+    line-height: 31px;
+    font-size: 13px;
+    color: #333;
+    padding:10px 20px;
+}
+.drop-menu-list ul li a:hover{
+    background: #f5f5f5;
+}
+.drop-menu-list ul li a i{
+    font-size: 18px;
+    margin-right: 12px;
+    vertical-align: middle;
+    margin-top: -7px;
+    color: #f80;
+}
+.login-after-box:hover{
+    background: #f5f5f5;
+}
+.user-box-right:hover .drop-menu-list{
+    display: block;
+}
+.login-after-name{
+    width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+}
+.liked{
+    color: red;
+}
+
+
+
+
+
+
+
+
+/*　清浮动样式　*/
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+
+}
+.clearfix:after{
+	clear:both;
+}

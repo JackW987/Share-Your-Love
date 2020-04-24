@@ -1,0 +1,449 @@
+.player-banner{
+    width: 100%;
+    height: 815px;
+    padding-right: 360px;
+    position: relative;
+}
+#video-player{
+    width: 100%;
+    height: 100%;
+}
+.video-author{
+    width: 360px;
+    height: 100%;
+    background: #1c1f21;
+    position: absolute;
+    right: 0px;
+    top: 0px; 
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.opu-title{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-right: 60px;
+    position: relative;
+}
+.opu-fire{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    color: rgba(255,255,255,.6);
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 25px;
+    cursor: pointer;
+}
+.opu-fire i{
+    margin-right: 5px;
+}
+.author-head{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 16px;
+}
+.author-head img{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    float: left;
+    display: block;
+}
+.author-text{
+    float: left;
+    margin-left: 12px;
+}
+.author-text div{
+    margin-bottom:2px;
+    position: relative;
+}
+.author-text-name{
+    width: 80px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.follow-add-btn{
+    position: absolute;
+	right: -80px;
+	top: 3px;
+    font-size: 13px;
+    color:rgba(255,255,255,.6);
+}
+.follow{
+    color: #42c02e;
+}
+.author-text span{
+    color: rgba(255,255,255,.8);
+    font-size: 12px;
+}
+.video-author p{
+    line-height: 22px;
+    font-size: 12px;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 0px;
+}
+.author-blog{
+    padding-top: 24px;
+}
+.author-blog h3{
+    font-size: 16px;
+    color: #fff;
+    line-height: 24px;
+    margin:0px;
+}
+.author-blog ul{
+    margin:0px;
+    padding:0px;
+    width: 100%;
+}
+.author-blog ul li{
+    width: 272px;
+    padding-top: 15px;
+    list-style: none;
+    padding-left: 111px;
+    min-height: 79px;
+    position: relative;
+    cursor: pointer;
+}
+.author-blog ul li img{
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    width: 96px;
+    height: 64px;
+    border-radius: 5px;
+}
+.author-blog ul li .other-text{
+    width: 100%;
+}
+.other-text .other-text-top{
+    font-size: 14px;
+    color: rgba(255,255,255,.6);
+    line-height: 20px;
+    transition: .2s all linear;
+}
+.other-text .other-text-bottom span{
+    display: inline-block;
+    font-size: 12px;
+    color: rgba(255,255,255,.4);
+    padding-right: 14px;
+    transition: .2s all linear;
+    padding-top: 3px;
+}
+.other-text .other-text-bottom span i{
+    margin-right: 5px;
+}
+.author-blog ul li:hover .other-text-top{
+    color: rgba(255,255,255)!important;
+}
+.author-blog ul li:hover .other-text-bottom span{
+    color:rgba(255,255,255)!important;
+}
+.author-more-btn{
+    display: block;
+    width: 100%;
+    height: 24px;
+    color: rgba(255,255,255,.4);
+    background: rgba(255,255,255,.2);
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.author-more-btn i{
+    transition: .3s;
+}
+.author-more-btn:hover{
+    color: white;
+    background: #f80;
+}
+.author-more-btn:hover i{
+    margin-left: 15px;
+}
+/* 评论版块 */
+.comment-nav{
+    width: 100%;
+    height: 68px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(28,31,33,.1);
+}
+.comment-nav ul{
+    width: 1152px;
+    margin: 0 auto;
+    padding: 12px 16px;
+}
+.comment-nav ul li{
+    position: relative;
+    float: left;
+    margin-right: 96px;
+    font-size: 16px;
+    color: #545C63;
+    line-height: 40px;
+    cursor: pointer;
+    font-weight: 700;
+    list-style: none;
+}
+.comment-nav ul li:hover{
+    color: #F20D0D;
+}
+.comment-nav-li-active{
+    border-bottom: 3px solid #F20D0D;
+    color: #F20D0D!important;
+}
+.comment-text{
+    width: 800px;
+    padding-top: 50px;
+    float: left;
+}
+.comment-banner{
+    width: 1200px;
+    margin:0 auto;
+}
+.browse-comment{
+	width: 620px;
+	height: 269px;
+	position: relative;
+}
+.browse-comment .w-e-text-container{
+	height: 235px!important;
+	border:none!important;
+}
+.browse-comment-head{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border: 1px solid #ddd; 
+	display: block;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.browse-comment-head img{
+	width: 100%;
+	height: 100%;
+}
+#comment-editor{
+	width:736px;
+	height: 100%;
+	margin-left: 62px;
+	border: 1px solid #dcdcdc;
+}
+#comment-editor .w-e-toolbar{
+	border:none!important;
+}
+.comment-btn-box{
+	width: 100%;
+	padding-left: 60px;	
+	margin-top: 10px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #f0f0f0;
+	position: relative;
+}
+.send-comment-msg{
+	width: 115px;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	height: 37px;
+	line-height: 37px;
+	float: right;
+	background:#f80;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.love-article-btn{
+	width: 115px;
+	font-size: 17px;
+	color: white;
+	text-align: center;
+	height: 37px;
+	line-height: 37px;
+	float: left;
+	cursor: pointer;
+    border-radius: 3px;
+    background: #f80;
+}
+.browse-comment-area{
+	width: 100%;
+}
+.comment-area-ul{
+	width: 100%;
+	padding:0px;
+	margin:0px;
+}
+.comment-area-ul li{
+	list-style: none;
+	width: 100%;
+	padding:25px 10px 20px 50px;
+	position: relative;
+}
+.comment-area-time{
+	font-size: 12px;
+	line-height: 14px;
+	margin-top: 6px;
+	height: 14px;
+	color: #aaa;
+}
+.comment-user-name{
+	display: block;
+	float: left;
+	height: 20px;
+	color: #000;
+	font-size: 18px;
+	line-height: 20px;
+}
+.comment-area-btn{
+	width: auto;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+	float: right;
+	color: #b3b3b3;
+	margin-left: 20px;
+}
+.comment-area-btn span{
+	margin-left: 5px;
+}
+.comment-area-btn i{
+	font-size: 14px;
+}
+.comment-btn i{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 18px;
+}
+.comment-user-head{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	display: block;
+	left: 0px;
+	top: 25px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.comment-user-head img{
+	width: 100%;
+	height: 100%;
+}
+.comment-area-text p{
+	margin: 10px 0;
+    line-height: 1.8;
+}
+.child-comment-area {
+	display: none;
+}
+.child-comment-area textarea{
+	padding: 10px;
+	max-height: 112px;
+    width: 100%;
+    resize: none;
+    height:62px;
+    outline: none;
+}
+.child-comment-area a{
+	width: 60px;
+	height: 25px;
+	display: block;
+	float: right;
+	text-align: center;
+	line-height: 25px;
+	font-size: 13px;
+	color: white;
+	border-radius: 3px;
+	background: #f80;
+}
+.child-area-text{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+textarea{
+	resize: none;
+}
+/* 推荐以及相关 */
+.recom-banner{
+    width: 400px;
+    float: left;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.recom-banner ul{
+    margin:0px;
+    padding:0px;
+    width: 100%;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d9dde1;
+    margin-bottom: 30px;
+}
+.recom-banner ul li{
+    width: 100%;
+    list-style-type: none;
+    position: relative;
+    height: 67px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.recom-banner ul li div{
+    width: 220px;
+    margin-left: 112px;
+    box-sizing: border-box;
+    height: 67px;
+    border-bottom: 1px solid rgba(43,51,59,0.1);
+}
+.recom-banner ul li img{
+    display: block;
+    width: 96px;
+    height: 64px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+}
+.recom-banner h4{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #07111b;
+}
+.recom-banner ul li div a{
+    box-sizing: border-box;
+    padding-top: 8px;
+    font-size: 14px;
+    height: 34px;
+    line-height: 22px;
+    cursor: pointer;
+    color: #545C63;
+    transition: all .3s;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.recom-banner ul li div span{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    color: #545C63;
+    font-size: 12px;
+    display: block;
+}
+.recom-banner ul li div span i{
+    margin-right: 5px;
+    margin-left: 14px;
+    color: #f80;
+}

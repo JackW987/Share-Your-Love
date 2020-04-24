@@ -1,0 +1,584 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.main-box{
+    width: 100%;
+    height: 100%;
+}
+.banner-top-bg{
+    width: 100%;
+    height: 100%;
+    background: url(../images/banner-img/basketball-bg.jpg) center;
+    background-size: cover;
+}
+.banner-top-bg-mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+.bg-mask-content{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -120px;
+}
+.bg-mask-content .title{
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif!important;
+    letter-spacing:5px;
+    width: 100%;
+    display: block;
+}
+.bg-mask-content .text{
+    font-size: 40px;
+    color: white;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif!important;
+    display: block;
+    letter-spacing:3px;
+}
+.to-browse-btn{
+    display: inline-block;
+    color: #fff;
+    padding: 20px 70px;
+    background-color: rgba(36,33,46,0.32);
+    border: 1px solid rgba(255,255,255,0.4);
+    font-size: 18px;
+    margin-top: 40px;
+}
+.to-browse-btn:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+.banner-hot-tag{
+    padding:10px 0 20px; 
+    height: 54px;
+    width: 100%;
+    position: relative;
+}
+.banner-hot-tag img{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.banner-hot-tag .title{
+    font-size: 18px;
+    line-height: 24px;
+    height: 24px;
+    color: #222;
+    vertical-align: middle;
+}
+.banner-detail{
+    width: 1020px;
+    margin:0 auto;
+}
+.banner-hot-tag .text{
+    margin-left: 20px;
+    margin-bottom: 2px;
+    vertical-align: bottom;
+    font-size: 12px;
+    color: #99a2aa;
+    display: inline-block;
+}
+.hot-tag-list{
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    margin-bottom: 40px;
+}
+.hot-tag-list li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #e5e9ef;
+    border-radius: 12px;
+    background-color: #fff;
+    height: 22px;
+    margin: 5px 10px 5px 0;
+    cursor: pointer;
+    font-size: 13px;
+    overflow: hidden;
+}
+.hot-tag-list li a{
+    display: block;
+    line-height: 22px;  
+    padding: 0 10px;
+    color: #222;
+}
+.hot-tag-active{
+    background: #f80!important;
+    border-color: #f80!important;
+}
+.hot-tag-active a{
+    color: white!important;
+}
+.hot-tag-list li:hover{
+    border-color: #f80;
+}
+.another-btn{
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    background: white;
+    border: 1px solid #ccd0d7;
+    color: #555;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 13px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 100px;
+}
+.another-btn:hover{
+    background: #ccd0d7;
+}
+.another-btn i{
+    transition: .3s;
+}
+.another-btn:hover i{
+    transform: rotate(180deg)
+}
+/* 内容 */
+.banner-content{
+    width: 750px;
+    float: left;
+}
+.content-new-list{
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    padding:10px 0 20px;
+}
+.content-new-list li{
+    list-style: none;
+    float: left;
+}
+/* 视频版块样式 */
+.video-banner-item{
+    width: 235px;
+    box-shadow: 2px 2px 10px #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.player{
+    position: relative;
+    height: 150px;
+}
+.player .img-con{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    background: url(../images/video-top-banner/item-1.jpg) no-repeat;
+    background-size: cover!important;
+    background-position:center!important; 
+}
+.player .mask{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;   
+    transition: .3s;
+    cursor: pointer;
+    z-index: 1;
+}
+.player .mask i{
+    color: white;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    font-size: 60px;
+    line-height: 60px;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    transition: .3s;
+    opacity: 0;
+}
+.video-banner-item:hover .mask{
+    background: rgba(0, 0, 0, .5);
+}
+.video-banner-item:hover .mask i{
+    font-size: 40px;
+    opacity: 1;
+}
+.video-banner-item:hover .text-mask-banner{
+    bottom: 0px;
+}
+.video-banner-item .text{
+    width: 100%;
+    padding:10px 10px 0px 10px;
+    font-size: 13px;
+    display: block;
+}
+.video-banner-item .text .top-text{
+    cursor: pointer;
+    transition: .3s;
+}
+.video-banner-item .text .top-text:hover{
+    color: #f80;
+}
+.video-banner-item .text .bottom-text{
+    width: 100%;
+    height: 37px;
+    line-height: 12px;
+    color: #9f9f9f;
+    padding-bottom: 5px;
+    padding-left:24px;
+    position: relative;
+}
+.video-banner-item .text .bottom-text img{
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    position: absolute;
+    left: 0px;
+    top: 6px;
+}
+.video-banner-item .text .bottom-text .author-name{
+    height: 32px;
+    line-height: 32px;
+    float: left;
+    padding-left: 5px;
+    font-size: 13px;
+}
+.video-banner-item .text .bottom-text .hot-tag{
+    height: 32px;
+    line-height: 32px;
+    float: right;
+    padding-right: 5px;
+    font-size: 13px;
+}
+.video-banner-item .text .bottom-text .hot-tag i{
+    color: #f80!important;
+}
+.video-banner-item .text .bottom-text .playback-tag{
+    height: 32px;
+    line-height: 32px;
+    float: right;
+    padding-right: 5px;
+    font-size: 13px;
+    margin-right: 5px;
+}
+.video-banner-item .text .bottom-text .playback-tag i{
+    color: #f80!important;
+}
+.top-text .top-title{
+    float: left;
+}
+.top-text .type-tag{
+    float: right;
+    padding-right: 5px;
+    font-size: 13px;
+    color: #f80!important;
+}
+/* 主要内容导航 */
+.main-nav-list{
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #e5e9ef;
+}
+.main-nav-list ul{
+    padding:0px;
+    margin:0px;
+    margin-bottom: -2px;
+}
+.main-nav-list ul li{
+    list-style: none;
+    height: 48px;
+    line-height: 48px;
+    margin-right: 20px;
+    float: left;
+    cursor: pointer;
+}
+.main-text-nav{
+    float: left;
+    font-size: 15px;
+}
+.main-li-active{
+    color: #f80;
+    border-bottom: 2px solid #f80;
+}
+.sort-nav{
+    float: right;
+}
+.sort-nav li{
+    font-size: 13px;
+}
+.sort-li-active{
+    color: #f80!important;
+}
+.banner-video-plate{
+    width: 100%;
+    padding-bottom: 20px;
+}
+.banner-video-plate ul{
+    margin:0px;
+    padding:0px;
+}
+.banner-video-plate ul li{
+    width: 375px;
+    height: 280px;
+    padding:20px 20px 0px 0px;
+    list-style: none;
+    float: left;
+}
+/* 修饰样式 */
+.video-plate-fix{
+    width: 100%!important;
+}
+.video-plate-fix .player{
+    height: 195px;
+}
+/* 图文版块 */
+.banner-imgTxt-plate{
+    width: 100%;
+}
+.banner-imgTxt-plate ul{
+    margin:0px;
+    padding:0px;
+}
+.banner-imgTxt-plate ul li{
+    list-style: none;
+}
+/* 图文板块 */
+.imgTxt-left-banner{
+	width: 640px;
+	float: left;
+}
+.img-txt-atlas{
+	width: 100%;
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	float: left; 
+}
+.img-txt-atlas li{
+	width: 100%;
+	height: 248px;
+	padding:20px;
+	padding-right: 240px;
+	float: left;
+	position: relative;
+	border-bottom: 1px solid #f0f0f0 ;
+	padding-left: 0px;
+}
+.img-txt-main-img{
+	width: 200px;
+	height: 140px;
+	position: absolute;
+	border-radius:3px;
+	background: url(../images/bull-item/love-2.jpg);
+    background-size:120%!important;
+    background-position: center!important;
+	right: 20px;
+	top: 60px;
+}
+.img-txt-main-bottom{
+	height: 20px;
+	width: 100%;
+	margin-top: 10px;
+}
+.bottom-label{
+	width: 62px;
+	height: 20px;
+	line-height: 20px;
+	color: #ea6f5a;
+	font-size: 13px;
+	padding:2px 6px;
+	border:1px solid rgba(236,97,73,.7);
+	border-radius:3px;
+}
+.bottom-label:hover{
+	background: #fef7f6;
+	color: #ea6f5a;
+}
+.bottom-label:focus{
+	color: #ea6f5a;
+}
+.bottom-click{
+	margin-left: 10px;
+	color: #b4b4b4;
+}
+.bottom-click:hover{
+	color: #787878;
+}
+.liked{
+	color: red!important;
+}
+.remind-label{
+	margin-top: 20px;
+	font-size: 14px;
+	color: #969696;
+}
+.img-txt-main-author a{
+	float: left;
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	color:black;
+	font-size: 15px;
+}
+.img-txt-main-author a img{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	margin-top: 1px;
+	margin-right: 10px;
+}
+.img-txt-main-title{
+	display: block;
+	width: 100%;
+	height: 27px;
+	line-height: 27px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 10px;
+	color: black;
+}
+.img-txt-main-title:hover{
+	text-decoration: underline;
+	color: black;
+}
+.img-txt-main-txt{
+	width: 100%;
+	height: 108px;
+	font-size: 13px;
+	line-height: 24px;
+}
+.usercenter-img-txt-remind{
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	width: 340px;
+}
+.banner-plate{
+    display: none;
+}
+.banner-plate-active{
+    display: block!important;
+}
+/* 热门列表 */
+.extend-list{
+    padding-left: 10px;
+}
+.extend-list h3{
+     font-size: 18px;
+     margin:0px;
+     padding-top: 10px;
+     font-weight: bold;
+}
+.hot-banner-list{
+    width: 270px;
+    float: left;
+}
+.extend-rank{
+    width: 100%;
+    padding-top: 10px;
+}
+.extend-rank .rank-list{
+    margin:0px;
+    padding:0px;
+}
+.rank-list li{
+    list-style: none;
+    width: 100%;
+    padding:7px 0px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #555;
+    transition: .3s;
+    position: relative;
+    padding-left: 24px;
+    line-height: 18px;
+}
+.rank-list li img{
+    width: 80px;
+    height: 53px;
+    border-radius: 3px;
+    display: none;
+    float: left;
+}
+.rank-list li p{
+    width: 100%;
+    margin:0px;
+    display: block;
+    float: left;
+    max-height: 53px;
+    overflow: hidden;
+}
+.rank-list .top-3 p{
+    width: 156px;
+    padding-left: 5px;
+}
+.rank-list .top-3 img{
+    display: block;
+}
+.rank-list li:hover{
+    color: #f80;
+}
+.rank-list li:hover img{
+    display: block;
+}
+.rank-list li:hover p{
+    width: 156px;
+    padding-left: 5px;
+}
+.rank-list .mark{
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background: #b8c0cc;
+    display: block;
+    padding:0px;
+    border-radius: 3px;
+    margin-right: 7px;
+    position: absolute;
+    left: 0px;
+    top: 7px;
+}
+.mark-top{
+    background: #f80!important;
+}
+.extend-rank a{
+    text-decoration:none;
+    text-align: center;
+    height: 30px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+    background: #e6e6e6;
+    line-height: 30px;
+    border-radius: 3px;
+}
+.extend-rank a i{
+    transition: .3s;
+}
+.extend-rank a:hover{
+    background: #f80;
+    color: white;
+}
+.extend-rank a:hover i{
+    margin-left: 15px;
+}

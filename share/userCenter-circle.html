@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>分享你的热爱</title>
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 腾讯云 -->
+    <link rel="stylesheet" href="http://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="/static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/wangEditor.min.css" />
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="/static/css/amazeui.cropper.css">
+    <!-- 非插件css -->
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <!-- 个人中心通用样式 -->
+    <link rel="stylesheet" href="/static/css/userCenter.css">
+    <link href="/static/css/userCenter-circle.css" rel="stylesheet">
+    
+  </head>
+  <body> 
+    <div class="top-nav">
+      <div class="top-nav-container clearfix">
+        <img src="/static/images/logo.svg" alt="logo" class="logo">
+        <ul class="list-btn clearfix">
+          <li class="top-nav-active">
+            首页
+          </li>
+          <li>
+            分类
+          </li>
+          <li>
+            论坛
+          </li>
+          <li>
+            视频
+          </li>
+        </ul>
+        <div class="search-box">
+            <input type="text">
+            <a href="javascript:void(0);">
+              <i class="glyphicon glyphicon-search">
+                
+              </i>
+              搜索
+            </a>
+        </div>
+        <div class="user-box">
+          <ul class="user-box-btn">
+            <li class="user-box-btn-li">
+              <i class="fa fa-envelope-o"></i>
+              消息
+            </li>
+            <li class="user-box-btn-li follow-btn-li">
+              <div class="box-btn-text">
+                <i class="fa fa-heart-o"></i>
+                关注
+              </div>
+              <div class="follow-detail-box">
+                <i class="glyphicon glyphicon-triangle-top top-arrow-decoration"></i>
+                <span class="follow-detail-title">
+                  我关注的所有作者
+                </span>
+                <ul>
+
+                </ul>
+                <a href="javascript:void(0);">
+                  全部关注
+                </a>
+              </div>
+            </li>
+            <li class="user-box-btn-li history-btn-li">
+              <div class="box-btn-text">
+                <i class="fa fa-history"></i>
+                历史
+              </div>
+              <div class="love-detail-box">
+                <i class="glyphicon glyphicon-triangle-top top-arrow-decoration"></i>
+                <span class="detail-box-title">
+                  <i class="glyphicon glyphicon-tag"></i>
+                </span>
+                <ul class="love-detail-list">
+
+                </ul>
+                <a href="javascript:void(0);">
+                  更多
+                  <i class="glyphicon glyphicon-menu-right"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div class="user-box-right">
+            <!-- 登陆后 -->
+            <!-- <img src="images/admin.jpg" alt="头像">
+            <span>
+              风雪夜归人
+            </span> -->
+            <!-- 登录前 -->
+            <div class="login-before">
+              <i class="fa fa-user-o"></i>
+              <a href="javascript:void(0);" class="sign-btn" data-toggle="modal" data-target=".bs-example-modal-sm">
+                登录
+              </a><!-- 
+           --><a href="javascript:void(0);" class="login-btn" data-toggle="modal" data-target=".bs-example-modal-sm">
+                注册
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 登录注册框 -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+       <div class="modal-dialog sign-container" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="login-sign-nav">
+              <a href="javascript:void(0);" class="nav-sign-btn login-sign-nav-active">
+                登录
+              </a>
+              <a href="javascript:void(0);" class="nav-login-btn">
+                注册
+              </a>
+            </div>
+            <div class="handle-change-box">
+              <div class="sign-handle-box animated handle-box-active handle-child-box">
+                <div class="login-sign-input">
+                  <div class="username-input">
+                    <i class="fa fa-user"></i>
+                    <input class="login-username" type="text" placeholder="邮箱">
+                  </div>
+                  <div class="password-input">
+                    <i class="fa fa-lock"></i>
+                    <input class="login-password" type="password" placeholder="密码">
+                  </div>
+                </div>
+                <div class="login-sign-handle">
+                  <div class="handle-remember">
+                    <input type="checkbox" >
+                    记住密码
+                  </div>
+                  <div class="handle-forget">
+                    忘记密码?
+                  </div>
+                </div>
+                <a href="javascript:void(0);" class="sign-to-btn">
+                  登录
+                </a>
+              </div>
+              <div class="login-handle-box animated handle-child-box">
+                <div class="login-sign-input">
+                  <div class="username-input">
+                    <i class="fa fa-user"></i>
+                    <input class="register-username" type="text" placeholder="注册邮箱">
+                  </div>
+                  <div class="password-input">
+                    <i class="fa fa-lock"></i>
+                    <input class="register-password" type="password" placeholder="密码">
+                  </div>
+                  <div class="refirm-password password-input">
+                    <i class="fa fa-lock"></i>
+                    <input class="register-refirm-password" type="password" placeholder="确认密码">
+                  </div>
+                  <a href="javascript:void(0);" class="login-to-btn">
+                    注册
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 上传图片 -->
+    <div class="upload-img-box">
+      <div>
+        <a href="javascript:void(0);" class="input-image">
+          选择上传图片
+          <input type="file">
+        </a>
+        <a href="javascript:void(0);" class="confirm-upload">
+          确认更改
+        </a>
+      </div>
+      <div class="cut-img-box">
+        <img src="/static/images/userCenter/icon/user.jpg"  id="image" alt="show-1" />
+      </div>
+      <div class="cut-img-box-preview">
+
+      </div>
+    </div>
+    <!-- 个人中心通用模块 -->
+    <div class="userCenter-banner clearfix">
+      <div class="userCenter-top-bg">
+        <div class="userCenter-top-info">
+          <div class="head-img">
+            <img src="/static/images/userCenter/icon/user.jpg" alt="head">
+            <a href="javascript:void(0);">
+              更换头像  
+            </a>
+          </div>
+          <div class="head-basic">
+            <span>
+              测试用户
+            </span>
+            <div class="position-fixed">
+              <input type="text" placeholder="编辑个性签名" maxlength="50" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="userCenter-nav">
+        <ul class="clearfix">
+          <li class="clearfix">
+            <span class="icon">
+              <img src="/static/images/userCenter/icon/fire.png" alt="fire">
+            </span>
+            <span>
+              热门
+            </span>
+          </li>
+          <li class="clearfix">
+            <span class="icon icon-love">
+              <img src="/static/images/userCenter/icon/love.png" alt="love">
+            </span>
+            <span>
+              喜欢
+            </span>
+          </li>
+          <li class="clearfix">
+            <span class="icon icon-tv">
+              <img src="/static/images/userCenter/icon/tv.png" alt="video">
+            </span>
+            <span>
+              视频
+            </span>
+          </li>
+          <li class="clearfix">
+            <span class="icon icon-blog">
+              <img src="/static/images/userCenter/icon/blog.png" alt="blog">
+            </span>
+            <span>
+              博文
+            </span>
+          </li>
+          <li class="userCenter-nav-active clearfix">
+            <span class="icon icon-circle">
+              <img src="/static/images/userCenter/icon/star.png" alt="star">
+            </span>
+            <span>
+              圈子
+            </span>
+          </li>
+          <li class="clearfix">
+            <span class="icon">
+              <img src="/static/images/userCenter/icon/setting.png" alt="setting">
+            </span>
+            <span>
+              资料
+            </span>
+          </li>
+          <div class="bottom-decoration"></div>
+          <div class="circle-intro clearfix">
+            <a href="javascript:void(0);">
+              <p class="circle-info">关注数</p>
+              <p class="number followerNum"></p>
+            </a>
+            <a href="javascript:void(0);">
+              <p class="circle-info">粉丝数</p>
+              <p class="number fansNum"></p>
+            </a>
+          </div>
+        </ul>
+      </div>
+      <div class="userCenter-container">
+        <div class="plate-section-video">
+          <h3 class="plate-section-title">
+            <a href="javascript:void(0);" class="plate-title-tag">
+              我的圈子
+            </a>
+            <span class="plate-section-title-info">
+              取消关注后对方不会收到消息
+            </span>
+          </h3>
+          <div class="plate-section-div circle-list">
+            <span class="plate-title-work-nav clearfix">
+              <ul>
+                <li>
+                  <a href="javascript:void(0);" class="work-nav-active work-nav-follow-btn">
+                    我的关注
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" class="work-nav-fans-btn">
+                    我的粉丝
+                  </a>
+                </li>
+                <div class="work-nav-decoration">
+                  <div class="decoration-arrow-top">
+
+                  </div>
+                </div>
+              </ul>
+            </span>
+            <ul class="circle-list-people follow-list-banner list-banner-active">
+
+            </ul>
+            <ul class="circle-list-people fans-list-banner">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="userCenter-list">
+        <div class="plate-list-banner">
+          <div class="plate-list-title">
+            <img src="/static/images/userCenter/icon/recorder.png" alt="手柄">近五天粉丝数量
+          </div>
+          <div class="plate-list-chart" id="list-chart">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="/static/js/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- 腾讯云 -->
+    <script src="http://imgcache.qq.com/open/qcloud/video/tcplayer/tcplayer.min.js"></script>
+    <script src="http://imgcache.qq.com/open/qcloud/video/tcplayer/lib/hls.min.0.8.8.js"></script>
+    <!-- wangEditor -->
+    <script type="text/javascript" src= "/static/js/wangEditor.js"></script>
+    <!-- layer.js -->
+    <script src="/static/js/layer/layer.js"></script>
+    <!-- echart.js -->
+    <script src="/static/js/echarts.min.js"></script>
+    <!-- cropper.js-->
+    <script src="/static/js/cropper.js"></script>
+    <!-- nav js -->
+    <script src="/static/js/nav.js"></script>
+    <!-- own js -->
+    <script src="/static/js/userCenter.js"></script>
+    <script src="/static/js/userCenter-circle.js"></script>
+    <!--axios-->
+    <script src="/static/js/axios.min.js"></script>
+    <!--cookiesUtil-->
+    <script src="/static/js/user/utils.js"></script>
+    <!--user user js-->
+    <script src="/static/js/user/user-common.js"></script>
+    <!--user user-center common js-->
+    <script src="/static/js/user/userCenter-common.js"></script>
+    <!--user user circle js-->
+    <script src="/static/js/user/userCenter-circle.js"></script>
+  </body>
+</html>
